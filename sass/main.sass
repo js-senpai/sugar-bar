@@ -1,0 +1,392 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: Arial, sans-serif
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+a
+	font-family: GothamPro
+	text-decoration: none
+a:hover
+    text-decoration: none 
+/*Контейнеры*/
+.justify-flex-container
+  max-width: 1167px
+  min-width: 320px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 auto
+.container
+  max-width: 1167px
+  min-width: 320px 
+  margin: 0 auto
+.social-btn
+  display: inline-block
+  width: 26px
+  height: 26px
+  border-radius: 50%
+  overflow: hidden
+  text-align: center
+  margin: 0 5px
+.main-subtitle
+  font-family: GothamPro Light
+  font-size: 0.8em
+  text-align: center
+  font-weight: lighter
+  text-transform: uppercase
+/*Заголовки*/
+.main-title
+  font-family: GothamPro Light
+  font-size: 1.8em
+  color: #000
+  text-align: center
+  padding: 20px 0
+  position: relative
+  text-transform: uppercase
+.main-title::before
+  content: ""
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0 
+  margin: 0 auto
+  display: block
+  width: 100px
+  height: 2px
+  background-color: $green
+/*Хедер*/
+#header 
+  min-height: 130px
+  position: fixed
+  top: 0
+  z-index: 1000
+  width: 100%
+.header-top
+  padding: 15px
+.header-top__left
+  a 
+    color: #fff
+    font-size: 1em
+  a:hover 
+    color: $green
+  a:first-child
+    padding-right: 30px
+  .social-btn
+    vertical-align: bottom
+.header-top__right
+  display: flex
+.input-search
+  background: none
+  border: none
+  outline: none
+  border-bottom: 1px solid #fff
+  padding-bottom: 5px
+  color: #fff
+  font-size: 14px
+.input-search::placeholder
+  color: #fff
+  font-family: Ubuntu
+  font-size: 14px
+.search-img
+  width: 26px
+  height: 26px
+  background: url('../img/search.png') no-repeat
+  border: none
+  outline: none
+  cursor: pointer
+  vertical-align: bottom
+.lang
+  margin-left: 20px
+  color: #fff
+  a
+    color: #fff
+    padding: 0 5px
+  a:hover
+    color: #000
+.header-bottom
+  background: url('../img/renacle.png') no-repeat
+  background-color: #fff
+  background-position: left
+.header-menu
+  list-style-type: none
+  .header-menu__item
+    display: inline-block
+    position: relative
+    a 
+      font-family: GothamPro Light
+      color: #000
+      display: block
+      padding: 5px 10px
+      border-bottom: 2px solid transparent
+    a:hover
+      color: $green
+      border-bottom: 2px solid $green
+.dropdown-header-menu
+  position: absolute
+  display: none
+  width: 440px
+  display: none
+  list-style-type: none
+  background-color: #dfe0e1
+  opacity: 0.9
+  padding: 0
+  top: 55px
+  left: -168px
+.header-menu__item:hover ul.dropdown-header-menu
+  display: block
+.dropdown-header-menu::before
+  content: ""
+  display: block
+  width: 30px
+  height: 30px
+  background: none
+  border: 15px solid transparent
+  border-bottom: 19px solid #dfe0e1
+  opacity: .9
+  margin: -34px auto 0 auto
+.dropdown-header-menu__item
+  font-size: 14px
+  a
+    display: block
+    padding: 10px 20px !important
+    color: #000
+  a:hover
+    background: $green
+    color: #fff !important
+/*Main*/
+.slider-main
+  .owl-dots
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 35px
+    margin: 0 auto
+.slider-main-item
+  position: relative
+  img
+    height: 630px
+    filter: brightness(0.5)
+  .slider-main-caption  
+    position: absolute
+    z-index: 9999
+    max-width: 458px
+    margin: 0 auto
+    left: 0
+    right: 0
+    bottom: 35%
+    color: #fff
+    text-align: center
+.slider-main-title
+  font-family: Monserat
+  font-weight: bold
+.slider-main-text
+  font-family: GothamPro Light
+
+.benefits
+  background-color: $green
+.benefits-item
+  margin: 50px 0
+  color: #fff
+  width: 25%
+  text-align: center
+.benefits-number
+  font-family: GothamPro Bold
+  font-size: 40px
+.benefits-text
+  font-family: GothamPro Light
+  font-size: 1.3em
+.about-company-text
+  font-family: Ubuntu
+  font-size: 1.2em
+  a
+   color: $green
+.activity
+  background-color: #f7f7f7
+  .btn-more
+    display: block
+    width: 180px
+    background: $green
+    height: 50px
+    text-align: center
+    text-transform: uppercase
+    margin: 0 auto
+    color: #fff
+    line-height: 45px
+    border-radius: 5px 
+    border: 2px solid #dcdcdc
+  .btn-more:hover
+    transform: scale(1.1)
+.activity-item
+  background: #fff
+.activity-block, .activity-container
+  justify-content: flex-start
+.activity-first-item
+  max-height: 530px
+  width: 40%
+  margin: 0 10px 10px 0
+.activity-container 
+  width: 55%
+  margin: unset
+.activity-container .activity-item
+  height: 260px
+  width: 45%
+.activity-container .activity-item:first-of-type,.activity-container .activity-item:nth-of-type(3)
+  margin: 0 10px 10px 0 
+.activity-first-item,.activity-container .activity-item
+  border-radius: 5px
+  padding: 10px 30px
+  border: 2px solid transparent  
+.activity-first-item:hover,.activity-container .activity-item:hover
+  border: 2px solid #dcdcdc
+.activity-item__title
+  font-family: GothamPro
+  text-align: center
+  text-transform: uppercase
+  font-size: 16px
+.activity-item__title:last-of-type
+  margin-bottom: 0
+.activity-item__img
+  display: block
+  margin: 30px auto 15px auto
+.activity-container .activity-item:last-of-type .activity-item__img
+  margin-top: 0
+.activity-item-list
+  font-family: GothamPro Light
+  .activity-item-list__item
+    cursor: pointer
+    padding-bottom: 10px
+    font-size: 0.9em
+  .activity-item-list__item:hover
+    color: $green
+.experts-slider
+  .owl-nav
+    display: flex
+    justify-content: space-between
+    width: 100%
+    position: absolute
+    bottom: 50%
+    button
+      width: 37px
+      height: 37px
+      border: none
+      outline: none
+    .owl-prev
+      transform: rotate(-180deg)
+.experts-slider-items
+  display: flex
+  justify-content: space-around
+.expers-slider-item__img
+  height: 253px
+  max-width: 253px
+  overflow: hidden
+.expers-name
+  font-family: GothamPro
+  font-size: 16px
+  font-weight: lighter
+  text-transform: uppercase
+  text-align: center
+  margin-bottom: 0
+.expers-prof
+  text-align: center
+  font-family: GothamPro Light
+  color: $green
+  font-size: 14px
+  margin: 0
+.experts-text
+  font-family: GothamPro
+  font-size: 16px
+  font-weight: lighter
+  font-size: 13px
+  margin-top: 5px
+.our-work
+  background-color: #f7f7f7
+.our-work-container
+  display: flex
+  flex-wrap: wrap
+.our-work__item
+  width: 33%
+  position: relative
+  padding: 10px
+.our-work__item:nth-of-type(1)::before,.our-work__item:nth-of-type(2)::before,.our-work__item:nth-of-type(4)::before,,.our-work__item:nth-of-type(5)::before
+  content: ''
+  display: block
+  background: url('../img/punkt.png')
+  background-size: 1
+  width: 1px
+  height: 90%
+  right: 0
+  position: absolute
+.our-work__item:nth-of-type(1)::after,.our-work__item:nth-of-type(2)::after,.our-work__item:nth-of-type(3)::after
+  content: ''
+  display: block
+  background: url('../img/punk-vert.png')
+  background-size: 1
+  width: 100%
+  height: 1px
+  bottom: 0
+  position: absolute
+.work-container
+  display: flex
+  justify-content: space-around
+.our-work__item-title
+  font-family: GothamPro
+  text-align: center
+.our-work__item-text
+  text-align: center
+  font-family: GothamPro Light
+
+
+@import "media" /* Всегда в конце*/
