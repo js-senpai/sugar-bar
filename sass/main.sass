@@ -46,6 +46,10 @@ body
   line-height: 1.65
   font-family: Geometria-Medium
   overflow-x: hidden
+  max-width: 1920px
+  margin: 0 auto
+h2 
+  font-size: 2.3em
 .text-center
   text-align: center
 img 
@@ -57,6 +61,11 @@ a
   text-decoration: none
 a:hover
     text-decoration: none 
+button
+  cursor: pointer
+button:focus
+  outline: none
+  border: none
 .btn 
   display: block
   padding: 10px 15px
@@ -72,15 +81,14 @@ a:hover
   border: none 
 /*Контейнеры*/
 .justify-flex-container
-  max-width: 1175px
-  width:
+  max-width: 1170px
   min-width: 320px
   display: flex
   justify-content: space-between
   flex-wrap: wrap
   margin: 0 auto
 .container
-  max-width: 1175px
+  max-width: 1170px
   min-width: 320px 
   margin: 0 auto
 /* Header */
@@ -89,14 +97,14 @@ a:hover
 .header-top__left
   font-weight: bold
   text-transform: uppercase
-  font-size: 13px
+  font-size: 0.9em
   font-family: Geometria-Bold
   line-height: 47px
 .header-top__right
   display: flex
   justify-content: flex-end
 .header-number
-  font-size: 13px
+  font-size: 0.9em
   font-family: Geometria-Bold  
   line-height: 47px
   color: #000
@@ -125,6 +133,7 @@ a:hover
   line-height: 42px
 .logo
   max-width: 270px
+  margin-right: 90px
   img
     width: 100%
     margin-top: 7px
@@ -137,6 +146,9 @@ a:hover
   margin: 0 10px
   a 
     color: #fff
+    font-size: 0.9em
+.btn-zap,.btn-call
+  font-size: 0.9em
 .btn-zap
   background-color: #EAB6B5
   color: #fff
@@ -165,4 +177,144 @@ a:hover
   border-radius: 50%
 .main-info-title
   margin-top: 200px
+/*main info middle */
+.main-info-middle
+  display: flex
+  flex-wrap: wrap
+.main-info-middle__left,.main-info-middle-right
+  width: 50%
+  height: 700px
+.main-info-middle__left
+  background-color: #CBCFDB
+  img
+    width: 361px
+    height: 228px
+    display: block
+    margin: 0 auto
+    margin-top: 239px
+.main-info-middle-right
+  p 
+    width: 471px
+    margin: 0 auto
+    margin-top: 239px
+/* Advantages */
+.advantages
+  padding: 150px 0
+.advantages-item
+  width: 30%
+.advantages-img
+  margin-top: 20px
+  text-align: center
+  img
+    max-width: 100%
+/* Main-slider */
+.main-slider
+  position: relative
+  .owl-nav
+    position: absolute
+    top: 30%
+    justify-content: space-between
+    display: flex
+    width: 95%
+    margin: 0 auto
+    left: 0
+    right: 0
+  .owl-prev,.owl-next
+    span
+      color: #fff
+      font-size: 4em
+.main-slider-item
+  display: flex
+  height: 500px
+.main-slider-item-right
+  width: 45%
+.main-slider-item-left
+ background-color: #FFCEC9
+ width: 55%
+ position: relative
+ p 
+   padding-top: 150px
+   width: 70%
+   font-size: 1.3em
+   color: #fff
+   margin: 0 auto
+ .big-numb
+   font-size: 6em
+   font-family: Geometria-Bold
+   display: block
+   margin: -50px 0
+.main-slider-item-left::before
+  content: ""
+  display: block
+  width: 160px
+  height: 160px
+  background: url('../img/svg/LOGO_round_1.svg') no-repeat center
+  background-color: #fff
+  position: absolute
+  border-radius: 50%
+  right: -80px
+  top: 50px
+.main-slider-item-right
+ background-color: #FFCEC9
+ img
+   height: 100%
+/*Masters*/
+.our-masters
+  padding: 150px 0
+  position: relative
+.master-slider
+  display: flex 
+  justify-content: space-between
+  align-items: baseline
+  margin-top: 80px
+  position: relative
+.master-slider-nav
+  position: absolute
+  top: 50%
+  width: 100%
+  display: flex
+  justify-content: space-between
+.master-slider-left,.master-slider-right
+  font-size: 4em
+  background: #fff
+  border: none 
+  outline: none
+.main-slider-img
+  width: 364px
+  height: 355px
+.master-slider-img
+  background-size: cover
+  background-position: top
+  width: 162px
+  height: 229px
+.master-slider-title,.master-slider-text
+  visibility: hidden
+.main-slider-title,.master-slider-title
+  font-size: 1.3em
+.master-slider-content
+  margin-top: 20px
+.main-slider-text
+  font-size: 1.1em
+  font-weight: lighter
+/* gknow */
+.gknow
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+.gknow-left,.gknow-right
+  width: 50%
+  height: 700px
+.gknow-right
+ background-color: $pink
+ text-align: center
+ img 
+   max-width: 293px
+   margin-top: 170px
+.gknow-left-title,.gknow-list
+  max-width: 527px
+  margin: 0 auto
+.gknow-list
+  margin-top: 110px
+  list-style-type: none
+
 @import "media" /* Всегда в конце*/
