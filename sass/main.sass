@@ -44,7 +44,7 @@ body
   min-width: 320px
   position: relative
   line-height: 1.65
-  font-family: Geometria-Medium
+  font-family: Geometria
   overflow-x: hidden
   max-width: 1920px
   margin: 0 auto
@@ -63,7 +63,7 @@ a:hover
     text-decoration: none 
 button
   cursor: pointer
-button:focus
+button:focus,input:focus
   outline: none
   border: none
 .btn 
@@ -361,6 +361,8 @@ button:focus
   max-width: 250px
   margin: 200px 0 0 30px
 /* services */
+.services
+  padding-bottom: 150px
 .studio-title
   margin-bottom: 40px
 .services-container
@@ -370,8 +372,20 @@ button:focus
   width: 660px
   height: 500px
   margin: 0 70px
+  cursor: pointer
 .op-hover
   width: 660px
+  height: 500px
+  background-color: #00000057
+  visibility: hidden
+  padding-top: 1px
+.btn-more-services
+  background-color: $pink
+  color: #fff
+  width: 153px
+  margin: 226px auto 0 auto
+  height: 50px
+  line-height: 50px
 .services-block
   margin-left: 30%
   width: 100%
@@ -403,4 +417,62 @@ button:focus
   font-size: 4em
 .btn-services-right
   margin-right: 190px
+/*Контактная форма */
+.contact-forms
+  height: 320px
+  background-color: #CBCFDB
+.contact-forms-title
+  text-align: center
+  text-transform: uppercase
+  color: #fff
+  padding-top: 70px
+.form-cons
+  margin-top: 50px
+  text-align: center
+.form-cons-container
+  display: inline-block
+  margin: 10px
+.input-form-cons
+  width: 366px
+  padding: 15px
+  color: #fff
+  border: 1px solid #fff
+  border-radius: 15px
+  background-color: #CBCFDB
+.input-form-cons::placeholder
+  color: #fff
+  text-transform: uppercase
+  font-family: Geometria-Medium
+  font-size: 0.9em
+.btn-forms-cons-submit
+  padding: 15px
+  border-radius: 15px
+  background-color: $pink
+  text-align: center
+  color: #fff
+  width: 153px
+/* Футер */
+#footer
+  display: flex 
+  justify-content: space-between
+  flex-wrap: wrap
+.footer-item
+  width: 50%
+.footer-item:nth-of-type(2)
+  padding: 90px 0 0 90px
+.footer-item
+  p
+    font-size: 1.2em
+    a 
+
+      font-family: Geometria-Bold
+      color: #000
+.footer-item
+  .social-menu
+    margin-top: 50px
+    margin-left: 0
+  .footer-logo
+    text-align: right
+    padding-right: 50px
+    padding-top: 50px
 @import "media" /* Всегда в конце*/

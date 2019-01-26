@@ -50,6 +50,11 @@ var show = true;
            show = false;
         }
     });
+ $('.services-item').hover(function(){
+ 	$(this).find('.op-hover').css('visibility','visible');
+ },function(){
+ 	$(this).find('.op-hover').css('visibility','hidden');
+ });
   var col_serviced = $('.services-item').width(),col_serviced_nav = $('.services-nav-item').width();
   $('.services-container').css('width','calc(100%*'+col_serviced+')');
   $('.services-nav').css('width','calc(100%*'+col_serviced_nav+')');
