@@ -27,8 +27,8 @@
        </div>
        <div class="header-top__right">
          <ul class="social-menu">
-           <li class="social-menu-item"><a href="#"><img src="img/svg/facebook.svg" title="facebook" alt="facebook"></a></li>
-           <li class="social-menu-item"><a href="#"><img src="img/svg/i-logo.svg" title="instagram" alt="instagram"></a></li>
+           <li class="social-menu-item"><a href="#" class="social-fb"></a></li>
+           <li class="social-menu-item"><a href="#" class="social-inst"></a></li>
          </ul>
          <a href="tel:0932535335" class="header-number">(093) 25 35 335</a>
          <a href="tel:0932535335" class="header-number">(097) 74 88 747</a>
@@ -46,8 +46,22 @@
           <li class="nav-menu-item"><a href="#">Блог</a></li>
           <li class="nav-menu-item"><a href="#">Контакты</a></li>
         </ul>
+         <ul class="mobile-social-menu">
+           <li class="mobile-social-menu-item"><a href="#" class="mobile-social-fb"></a></li>
+           <li class="mobile-social-menu-item"><a href="#" class="mobile-social-inst"></a></li>
+         </ul>        
+         <div class="btn-mobile-container">
+           <button class="btn mobile-btn-zap btn-zap">Записаться</button><button class="btn mobile-btn-call btn-call mdi mdi-phone"></button>             
+         </div>  
       </nav>
       <button class="btn btn-zap">Записаться</button><button class="btn btn-call">Обратный звонок</button>        
+        <div class="header__button">
+          <button class="open-button">
+            <span class="icon-bar icon-one"></span>
+            <span class="icon-bar icon-two" style="display: none;"></span>
+            <span class="icon-bar icon-three"></span>
+         </button>
+        </div>
       </div>
     </div>
   </header>
@@ -61,10 +75,13 @@
       <div class="main-info-right">
         <div class="circle-main"></div>
         <div class="main-info__img" style="background: url('img/photo/timothy-paul-smith-689925-unsplash.jpg') no-repeat; background-size: cover;background-position: center;"></div>
+        <div class="btn-mobile-container">
+           <button class="btn mobile-btn-zap btn-zap">Записаться</button><button class="btn mobile-btn-call btn-call mdi mdi-phone"></button>             
+        </div>  
     </div>
      </div>
     </div>
-    <div class="main-info-middle">
+    <div class="main-info-middle ">
       <div class="main-info-middle__left">
         <div class="main-info-middle-img"><img src="img/photo/tumblr_oews82M1Q61qb4hiyo1_1280.jpg" title="pic" alt="pic"></div>
       </div>
@@ -72,7 +89,7 @@
         <p>Удаляя нежелательные волосы при помощи пасты, вы не почувствуете такой боли как при процедуре восковой депиляции, особенно, если речь идет о таком вопросе как — депиляция бикини. Используя методику шугаринг, кожа не травмируется и не обжигается, как при восковой депиляции. Благодаря тому, что сахарную смесь не нужно разогревать, шугаринг не имеет противопоказаний при варикозе. </p>
       </div>
     </div>
-    <div class="advantages justify-flex-container">
+    <div class="advantages justify-flex-container ">
       <div class="advantages-item">
         <h3 class="advantages-title">Премиум продукция</h3>
         <p class="advantages-text">Работаем с продукцией продукцией премиум класса PANDHY'S</p>
@@ -91,7 +108,7 @@
     </div>
     <div class="main-slider owl-carousel">
       <div class="main-slider-item">
-        <div class="main-slider-item-left">
+        <div class="main-slider-item-left slider-pink">
           <p>Получи <span class="big-numb">-10%</span>на процедуру суммой больше 1000 грн</p>
         </div>
         <div class="main-slider-item-right">
@@ -99,26 +116,26 @@
         </div>
       </div>
       <div class="main-slider-item">
-        <div class="main-slider-item-left">
-          <p>Получи <span class="big-numb">-10%</span>на процедуру суммой больше 1000 грн</p>
+        <div class="main-slider-item-left slider-pink">
+          <p>В день рождения <span class="big-numb">-15%</span>при наличии паспорта</p>
         </div>
         <div class="main-slider-item-right">
-          <img src="img/photo/rawpixel-761486-unsplash.jpg" alt="img">
+          <img src="img/photo/main-slider-2.jpg" alt="img">
         </div>
       </div>
       <div class="main-slider-item">
-        <div class="main-slider-item-left">
-          <p>Получи <span class="big-numb">-10%</span>на процедуру суммой больше 1000 грн</p>
+        <div class="main-slider-item-left slider-violet">
+          <p>Приведи друга и получи <span class="big-numb">-10%</span>на процедуру</p>
         </div>
         <div class="main-slider-item-right">
-          <img src="img/photo/rawpixel-761486-unsplash.jpg" alt="img">
+          <img src="img/photo/main-slider-3.jpg" alt="img">
         </div>
       </div>
     </div>
-    <section class="our-masters">
+    <section class="our-masters ">
       <h2 class="our-master-title container">Наши мастера</h2>
       <div class="master-slider container">
-        <div class="master-slider-item">
+        <div class="master-slider-item master-main">
           <div class="main-slider-img" style="background-image:  url('img/photo/10862514-1-white (1).jpeg');background-repeat:  no-repeat;background-size: cover;">
           </div>
           <div class="master-slider-content">
@@ -161,7 +178,7 @@
       </div>
         <div class="master-slider-nav"><button class="mdi mdi-chevron-left master-slider-left"></button><button class="mdi mdi-chevron-right master-slider-right"></button></div>
     </section>
-    <section class="gknow">
+    <section class="gknow ">
       <div class="gknow-left">
         <h2 class="gknow-left-title">Полезно знать</h2>
         <ul class="gknow-list">
@@ -202,7 +219,7 @@
         <div class="gknow-right__img"><img src="img/photo/4507005e0a67398089eb707d1c40d599 (1).jpg" alt="img" title="img"></div>
       </div>
     </section>
-    <section class="our-studio justify-flex-container">
+    <section class="our-studio justify-flex-container ">
       <div class="studio-left">
         <div class="studio-img-big">
           <img src="img/photo/photo_2018-12-31_14-56-45.jpg" alt="img" title="img">
@@ -217,7 +234,7 @@
         <br><a href="#">Больше фото</a></p>
       </div>
     </section>
-    <section class="services">
+    <section class="services ">
       <h2 class="services-title container">Услуги</h2>
       <div class="services-block">
         <div class="services-container">
@@ -278,7 +295,7 @@
         <button class="btn-services-right mdi mdi-chevron-right"></button>
       </div>
     </section>
-    <section class="contact-forms">
+    <section class="contact-forms ">
       <h2 class="contact-forms-title">Получи бесплатную консультацию</h2>
       <div class="form-cons">
         <form action="">
@@ -288,7 +305,8 @@
         </form>
       </div>
     </section>
-    <footer id="footer">
+</main>
+    <footer id="footer" class="">
       <div class="footer-item">
         <div class="footer-map">
  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.127060040362!2d30.48875171503168!3d50.45735859474922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce649dc8d175%3A0x6bec12d6b683e692!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0J_QuNC80L7QvdC10L3QutC-LCA0LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1548520516032" width="100%" height="553" frameborder="0" style="border:0" allowfullscreen></iframe>         
@@ -304,19 +322,66 @@
           <br>без выходных по адресу:
           <br><b>ул. Николая Пимоненко 4</b></p>
          <ul class="social-menu"> 
-           <li class="social-menu-item"><a href="#"><img src="img/svg/facebook.svg" title="facebook" alt="facebook"></a></li>
-           <li class="social-menu-item"><a href="#"><img src="img/svg/i-logo.svg" title="instagram" alt="instagram"></a></li>
+           <li class="social-menu-item"><a href="#" class="social-fb"></a></li>
+           <li class="social-menu-item"><a href="#" class="social-inst"></a></li>
          </ul>
          <div class="footer-logo">
               <a href="#" class="logo_footer"><img src="img/svg/LOGO_round_2.svg" alt="logo" title="logo"></a>
          </div>
       </div>
     </footer>
-  </main>
+    <div class="popup-sg popup-call hidden">
+      <div class="popup-container">
+        <div class="popup-sg-left slider-pink">
+          <img src="img/photo/popupcallimg.jpg" alt="img">
+        </div>
+        <div class="popup-sg-right">
+          <button class="closepopup mdi mdi-close"></button>
+          <div class="sg-right-container info-sg">
+          <h4 class="popup-sg-title">Оставьте заявку и наш администратор свяжется с вами в течение часа.</h4>
+          <div class="popup-sg-form">
+            <div class="popup-sg-form-container"><input type="text" class="popup-sg-input" placeholder="Имя"></div>
+            <div class="popup-sg-form-container"><input type="tel" class="popup-sg-input" placeholder="Телефон"></div>
+            <div class="sg-submit-container">
+            <input type="submit" class="popug-sg-submit" value="Отправить">              
+            </div>
+          </div>
+          </div>
+          <div class="thanks-sg hidden">
+            <h3 class="pop-sg-thanks-title">Cпасибо!</h3>
+            <p class="popup-sg-text">Ваша заявка отправлена. Наш специалист свяжется с вами в ближайшее время.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-sg popup-price hidden">
+      <div class="popup-container">
+        <div class="popup-sg-left slider-pink">
+          <img src="img/photo/popupcallimg.jpg" alt="img">
+        </div>
+        <div class="popup-sg-right">
+          <button class="closepopup mdi mdi-close"></button>
+          <div class="sg-right-container info-sg">
+          <h3 class="pop-sg-thanks-title">Записаться на процедуру</h3>
+          <p class="popup-sg-text">Оставьте заявку и наш администратор свяжется с вами в ближайшее время.</p>
+          <div class="popup-sg-form">
+            <div class="popup-sg-form-container"><input type="text" class="popup-sg-input" placeholder="Имя"></div>
+            <div class="popup-sg-form-container"><input type="tel" class="popup-sg-input" placeholder="Телефон"></div>
+            <div class="popup-sg-form-container"><input type="text" class="popup-sg-input" placeholder="желаемая дата записи"></div>
+            <div class="sg-submit-container">
+            <input type="submit" class="popug-sg-submit" value="Отправить">              
+            </div>
+          </div>
+          </div>
+          <div class="thanks-sg hidden">
+            <h3 class="pop-sg-thanks-title">Cпасибо!</h3>
+            <p class="popup-sg-text">Ваша заявка отправлена. Наш специалист свяжется с вами в ближайшее время.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/scripts.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.spincrement.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <style>.header__button{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;width:50%;}.open-button{display:block;margin-right:10px;background:#fff;color:#00a651;width:60px;height:40px;position:relative;outline:0;border: none;margin-top:10px;}.open-button .icon-bar{display:block;width:35px;height:2px;background:#00a651;margin:5px auto;position:relative;-webkit-transition:all 150ms ease-in-out;-o-transition:all 150ms ease-in-out;transition:all 150ms ease-in-out}.open-button.active .icon-one{top:5px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.open-button.active .icon-two{background-color:transparent}.open-button.active .icon-three{top:-9px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}}</style>
+    <style>.header__button{-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;width:50%;}.open-button{display:block;margin-right:10px;background:#EAB6B5;color:#fff;width:55px;height:55px;position:relative;outline:0;border: none;border-radius: 50%;}.open-button .icon-bar{display:block;width:27px;height:3px;border-radius:5px;background:#fff;margin:5px auto;position:relative;-webkit-transition:all 150ms ease-in-out;-o-transition:all 150ms ease-in-out;transition:all 150ms ease-in-out}.open-button.active .icon-one{top:4px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.open-button.active .icon-two{background-color:transparent}.open-button.active .icon-three{top:-4px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}}</style>
 </body>
 </html>
